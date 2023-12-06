@@ -1,13 +1,13 @@
 local configs = require("plugins.configs.lspconfig")
 local on_attach = configs.on_attach
 local capabilities = configs.capabilities
-local lspconfig = require "lspconfig"
+local lspconfig = require ("lspconfig")
 local prettier = require("prettier")
-
 lspconfig.cssls.setup({
  on_attach = on_attach,
  capabilities = capabilities,
- filetype = { "css", "scss", "less" }
+ filetype = { "css", "scss", "less" },
+  provideFormatter = true
 })
 
 lspconfig.pyright.setup({
@@ -23,6 +23,7 @@ lspconfig.clangd.setup({
   end,
   capabilities = capabilities,
   filetype = {"c", "cpp"},
+  provideFormatter = true
 })
 
 lspconfig.tsserver.setup({
@@ -46,8 +47,5 @@ lspconfig.html.setup({
     css = true,
     javascript = true,
   },
-  provideFormatter = true,
-
 })
-
 prettier.setup(require("custom.configs.prettierconfig"))

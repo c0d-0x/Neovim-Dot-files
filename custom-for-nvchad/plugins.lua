@@ -59,6 +59,7 @@ local plugins = {
       ensure_installed = {
         "debugpy",
         "clangd",
+        "clang-format",
         "black",
         "html-lsp",
         "css-lsp",
