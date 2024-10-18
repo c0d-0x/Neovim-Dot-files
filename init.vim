@@ -65,7 +65,7 @@ let g:NERDTreeDirArrowCollapsible="~"
 
 
 
-"togle key bind
+"toggle key bind
 :nmap <F8> :TagbarToggle<CR>
  
 nnoremap <C-e> :Ex<CR>
