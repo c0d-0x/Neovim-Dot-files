@@ -94,7 +94,7 @@ nnoremap <silent>    <A-.> <Cmd>BufferNext<CR>
 
 " switch to previous/next
 nnoremap <silent>    <A-<> <Cmd>BufferMovePrevious<CR>
-nnoremap <silent>    <A->> <Cmd>BufferMoveNext<CR>
+nnoremap <silent>    <A-> <Cmd>BufferMoveNext<CR>
 
 " Goto buffer in position...
 nnoremap <silent>    <A-0> <Cmd>:buffers<CR>
