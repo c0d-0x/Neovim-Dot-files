@@ -1,6 +1,7 @@
 ## Configuration files
 
-- nvim config with vim-plug (This was my old Configuration):
+- nvim & vim single config with vim-plug:
+- Browse through the config to check keybinds.
   - This nvim/vim config  relies om  vim-plug as its plugin manager.
   - To use this config, install [vim-plug](https://github.com/junegunn/vim-plug).
   - Then copy my init.vim file to ```~/.config/nvim```.
